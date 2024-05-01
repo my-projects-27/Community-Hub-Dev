@@ -21,9 +21,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": {
-          "code": "en-US"
-        },
+        "sourceLocale": "en",
         "locales": {
           "ml": {
             "translation": "src/locale/messages.ml.xlf"
