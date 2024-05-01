@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: 'create-family', component: CreateFamilyComponent , pathMatch: 'full',canActivate: [AuthGuard]},
   { path: 'config-master', component: ConfigMasterComponent , pathMatch: 'full',canActivate: [AuthGuard]},
   { path: 'welcome', component: WelcomeComponent , pathMatch: 'full'},
-  { path: '', component: WelcomeComponent , pathMatch: 'full'},
-  { path: '*', redirectTo: 'welcome', pathMatch: 'full'},
+  { path: '', component: WelcomeComponent },
+  { path: '**', redirectTo: 'welcome', pathMatch: 'full'},
 ];
 
 @NgModule({
