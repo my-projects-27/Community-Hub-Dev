@@ -1,0 +1,60 @@
+<form class="config-master-form">
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-12 centralize-div">
+            <label style="margin-top: 10px;"><b i18n>Element Type :</b></label>
+            <mat-radio-group [(ngModel)]="selectedEntity" name="selectedEntity" (change)="selectEntity()">
+              <mat-radio-button value="Union" color="primary" i18n>Union</mat-radio-button>
+              <mat-radio-button value="Branch" color="primary" i18n>Branch</mat-radio-button>
+              <mat-radio-button value="Unit" color="primary" i18n>Unit</mat-radio-button>
+              <mat-radio-button value="staticType" color="primary" i18n>Static Elements</mat-radio-button>
+            </mat-radio-group>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3" *ngIf="selectedEntity!='staticType'&&selectedEntity!='Union'">
+            <mat-form-field appearance="fill">
+                <mat-label>{{selectedEntity}}</mat-label>
+                <mat-select [(ngModel)]="configEntity.parentId" name="parent">
+                  <mat-option value="{{child.id}}" *ngFor="let child of parentList">{{child.value}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3" *ngIf="selectedEntity=='staticType'">
+            <mat-form-field appearance="fill">
+                <mat-label i18n>Type</mat-label>
+                <mat-select [(ngModel)]="configEntity.type" name="staticTypes">
+                  <mat-option value="{{child.id}}"  *ngFor="let child of staticTypes">{{child.value}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row" *ngIf="selectedEntity=='staticType'">
+        <div class="col-3">
+            <mat-form-field >
+                <mat-label i18n>Code</mat-label>
+                <input matInput type="string" [(ngModel)]="configEntity.code" name="code">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <mat-form-field >
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="configEntity.name" name="name">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <mat-form-field >
+                <mat-label>Name In Malyalam</mat-label>
+                <input matInput [(ngModel)]="configEntity.nameLocal" name="nameLocal">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <button mat-raised-button color="primary" style="width: 120px;" class="save-button" (click)="saveEntity()">Save</button>
+    </div>
+</form>

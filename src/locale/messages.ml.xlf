@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5414930534744480158" datatype="html">
+        <source>Element Type :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <target>മൂലക തരം :</target>
+      </trans-unit>
+            <trans-unit id="2569546231054773067" datatype="html">
+        <source>Union</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <target>യൂണിയൻ</target>
+      </trans-unit>
+      <trans-unit id="8387651464002742246" datatype="html">
+        <source>Branch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <target>ശാഖ</target>
+      </trans-unit>
+      <trans-unit id="8932917860978648376" datatype="html">
+        <source>Unit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <target>യൂണിറ്റ്</target>
+      </trans-unit>
+      <trans-unit id="315585846830163333" datatype="html">
+        <source>Static Elements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <target>സ്റ്റാറ്റിക് ഘടകങ്ങൾ</target>
+      </trans-unit>
+      <trans-unit id="8650499415827640724" datatype="html">
+        <source>Type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <target>ടൈപ്പ് ചെയ്യുക</target>
+      </trans-unit>
+      <trans-unit id="8186013988289067040" datatype="html">
+        <source>Code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/config-master/config-master.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <target>കോഡ്</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
